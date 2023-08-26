@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        padding: 96px 0;
+        position: absolute;
+        font-family: "Poppins", sans-serif;
+        background-image: url(images/bg-intro-desktop.png);
+        background-color: hsl(0, 100%, 74%);
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      .content-box {
+        color: #fff;
+        padding: 170px 130px;
+      }
+      .content-box h1 {
+        margin-bottom: 12px;
+        font-size: 48px;
+        line-height: 1.1;
+      }
+
+      .form-box {
+        background-color: #fff;
+
+        width: 480px;
+        border-radius: 5px;
+        padding: 30px 30px;
+        box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+      }
+      .trial-btn {
+        background-color: hsl(248, 32%, 49%);
+        border: none;
+        padding: 16px 50px;
+        width: 480px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        color: #fff;
+        box-shadow: 0px 7px 2px 0px rgba(0, 0, 0, 0.2);
+      }
+      .details-form input {
+        font-weight: 600;
+        width: 100%;
+        padding: 14px;
+        border-radius: 5px;
+        border: 0.5px solid hsl(246, 25%, 77%);
+      }
+      .details-form input[type="text"]:focus {
+        outline: 1px solid hsl(249, 10%, 26%);
+      }
+      .details-form button {
+        background-color: hsl(156, 50%, 50%);
+        width: 100%;
+        border: none;
+        box-shadow: 0px 3px 0px 0px rgba(56, 204, 140, 0.5);
+        text-transform: uppercase;
+        cursor: pointer;
+        padding: 12px 100px;
+        border-radius: 5px;
+        color: #fff;
+      }
+      .details-form .btn:hover {
+        background-color: hsl(156, 90%, 73%);
+      }
+
+      .form-box p {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        text-align: center;
+        color: hsl(246, 25%, 77%);
+      }
+      .form-box p strong {
+        color: hsl(0, 100%, 74%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-box">
+        <h1>
+          Learn to code by<br />
+          watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real-time.<br />
+          Watching scripted tutorials is great, but understanding how
+          <br />developers think is invaluable.
+        </p>
+      </div>
+
+      <div class="trial">
+        <button class="trial-btn">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </button>
+
+        <div class="form-box">
+          <form class="details-form">
+            <input type="text" placeholder="First Name" required /><br /><br />
+
+            <input type="text" placeholder="Last Name" required /><br /><br />
+
+            <input
+              type="text"
+              placeholder="Email Address"
+              required
+            /><br /><br />
+
+            <input type="text" placeholder="Password" required /><br /><br />
+
+            <button class="btn">Claim your free trial</button>
+          </form>
+          <p>
+            By clicking the button, you are agreeing to our
+            <strong>Terms and Services</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
+</html>
